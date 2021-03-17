@@ -1,7 +1,5 @@
 import "./style.scss";
 
-document.querySelector("#app").style.display = "block";
-
 const navIcons = document.getElementsByClassName("icon");
 console.log(navIcons);
 const navToggle = () => {
