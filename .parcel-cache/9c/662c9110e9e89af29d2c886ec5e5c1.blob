@@ -1,2 +1,0 @@
-!function(){document.querySelector("#app").style.display="block";const e=document.getElementsByClassName("icon");console.log(e);const t=document.getElementsByClassName("navButton");console.log(t),t[0].addEventListener("click",(()=>{e[0].classList.toggle("hidden"),e[1].classList.toggle("hidden")}))}();
-//# sourceMappingURL=index.HASH_REF_7f8acd1dd01a86faab7313a9bc348066.js.map

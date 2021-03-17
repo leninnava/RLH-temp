@@ -1,2 +1,0 @@
-document.querySelector("#app").style.display="block";const e=document.getElementsByClassName("icon");console.log(e);const s=document.getElementsByClassName("navButton");console.log(s),s[0].addEventListener("click",(()=>{e[0].classList.toggle("hidden"),e[1].classList.toggle("hidden")}));
-//# sourceMappingURL=login.HASH_REF_1be5fb6ea09f827872c1d7ef0136d8ec.js.map
