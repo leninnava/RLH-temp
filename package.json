@@ -1,17 +1,14 @@
 {
   "name": "tw",
   "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
+  "scripts": {},
   "devDependencies": {
-    "vite": "^2.0.5"
+    "@parcel/transformer-sass": "2.0.0-nightly.629"
   },
   "dependencies": {
     "@tailwindcss/jit": "^0.1.0",
     "autoprefixer": "^10.2.5",
+    "parcel": "^2.0.0-nightly.627",
     "postcss": "^8.2.7",
     "sass": "^1.32.8",
     "tailwindcss": "^2.0.3"
