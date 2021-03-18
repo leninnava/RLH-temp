@@ -16,7 +16,7 @@
   <body class="relative" style="background: #1c0b3b">
     <!-- Illustrations -->
 
-    <div class="absolute h-full w-full z-50 overflow-hidden">
+    <div class="absolute z-0 h-screen w-full overflow-hidden">
       <picture class="">
         <img
           class="h-full hidden absolute -left-56 -bottom-20 md:bottom-0 transform scale-150 md:scale-100 lg:left-28 z-10"
@@ -148,7 +148,7 @@
       >
         <form class="space-y-6" _lpchecked="1">
           <h1
-            class="text-2xl md:text-4xl lg:text-6xl lg:mb-8 text-left font-bold text-pink-default"
+            class="text-2xl -ml-1 md:text-4xl lg:text-6xl lg:mb-8 text-left font-bold text-pink-default"
           >
             Sign in to iMicro
           </h1>
@@ -259,7 +259,23 @@
             >
           </div>
         </form>
-        <div class="flex flex-col space-y-2 text-center"></div>
+
+        <div class="flex flex-col space-y-2 text-center">
+          <div
+            class="lg:hidden flex flex-col space-y-2 font-thin text-xs text-center"
+          >
+            <div>
+              <a href="" class="text-bright-blue">Buy a microdosing kit.</a>
+              <a href="" class="text-bright-blue">Privacy Terms.</a>
+            </div>
+
+            <span class="opacity-70 w-screen px-4 md:max-w-screen-sm leading-5">
+              Copyright Redlight Holland. We do not condone usage of illegal
+              substances. This app is intended for use where psychedelics are
+              legal.
+            </span>
+          </div>
+        </div>
       </section>
     </main>
     <script src="../index.js"></script>
