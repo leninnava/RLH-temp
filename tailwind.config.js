@@ -1,7 +1,7 @@
 const colors = require("tailwindcss/colors");
 module.exports = {
   purge: {
-    enabled: true,
+    enabled: false,
     content: ["./dist/*.html"],
   },
 
@@ -17,6 +17,8 @@ module.exports = {
         pink: {
           default: "#FF3883",
         },
+        "bright-blue": "#7D68FF",
+
         "bg-gradient": {
           first: "#101C65",
           last: "#00062E",

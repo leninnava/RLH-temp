@@ -4,10 +4,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 input + label {
   position: fixed;
   top: 40px;
