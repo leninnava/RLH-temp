@@ -6,14 +6,20 @@
     <title>RLH Tracking Homepage</title>
 
     <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://indestructibletype.com/fonts/Jost.css"
+      type="text/css"
+      charset="utf-8"
+    />
   </head>
 
-  <body
-    class="relative bg-gradient-to-tr from-bg-gradient-last to-bg-gradient-first"
-  >
+  <body class="relative font-MSC">
     <!-- Illustrations -->
 
-    <div class="absolute h-full w-full z-50 overflow-hidden">
+    <div
+      class="absolute h-screen w-full z-0 overflow-hidden bg-gradient-to-tr from-bg-gradient-last to-bg-gradient-first"
+    >
       <picture class="">
         <img
           class="h-full absolute -left-56 -bottom-20 md:bottom-0 transform scale-150 md:scale-100 lg:left-28 z-10"
@@ -32,7 +38,7 @@
       </picture>
       <figure class="">
         <img
-          class="hidden xl:block absolute right-0 top-14 transform -translate-x-40 z-50"
+          class="hidden xl:block absolute right-0 top-12 xl:top-12 transform -translate-x-40 z-50"
           src="../images/phoneillustration.png"
           alt="Phone Illustration"
           srcset="../images/phoneillustration.png"
@@ -43,11 +49,11 @@
     <!-- Illustrations -->
 
     <main
-      class="relative container w-screen h-screen mx-auto text-white body-font z-50"
+      class="relative z-30 container w-screen h-screen mx-auto text-white body-font z-50"
     >
       <!-- new navbar implementation -->
 
-      <nav class="relative mx-auto px-8 h-1/6 z-20">
+      <nav class="relative mx-auto px-8 h-1/6 z-50">
         <div class="flex items-center justify-between h-full">
           <div class="w-full justify-between flex items-center">
             <a class="md:block flex-shrink-0 z-50" href="./index.html">
@@ -149,9 +155,9 @@
         </div>
       </nav>
       <header
-        class="relative h-5/6 grid px-8 md:px-16 grid-cols-1 lg:grid-cols-2 items-center"
+        class="relative h-5/6 transform grid px-8 md:px-16 grid-cols-1 lg:grid-cols-2 items-center"
       >
-        <div>
+        <div class="-mt-10">
           <div class="space-y-8 mb-12">
             <h1 class="text-4xl md:text-5xl font-bold" style="max-width: 40ch">
               iMicro gives you insights into your microdosing journey!
@@ -174,6 +180,19 @@
         </div>
       </header>
     </main>
-    <script src="../index.js"></script>
+    <footer
+      class="hidden relative z-50 lg:flex container mx-auto h-1/6 -mt-16 flex-col space-y-2 px-8 md:px-24 lg:px-16 xl:px-16 font-thin text-xs text-left"
+    >
+      <div>
+        <a href="" class="text-bright-blue">Buy a microdosing kit.</a>
+        <a href="" class="text-bright-blue">Privacy Terms.</a>
+      </div>
+
+      <span class="opacity-70 w-auto leading-5 text-white">
+        Copyright Redlight Holland. We do not condone usage of illegal
+        substances. This app is intended for use where psychedelics are legal.
+      </span>
+    </footer>
   </body>
+  <script src="../index.js"></script>
 </html>

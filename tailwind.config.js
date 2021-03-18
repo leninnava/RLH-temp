@@ -1,3 +1,4 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 module.exports = {
   purge: {
@@ -8,6 +9,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+         fontFamily: {
+              sans: ['"Museo Sans Cyrl"', ...defaultTheme.fontFamily.sans],
+              display: ['Jost'],
+              "MSC": ['"Museo Sans Cyrl"'],
+            },
       colors: {
         fuchsia: colors.fuchsia,
         cyan: colors.cyan,
@@ -25,9 +31,6 @@ module.exports = {
         },
       },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 };

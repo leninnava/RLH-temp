@@ -1,5 +1,4 @@
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -54,6 +53,11 @@ input ~ nav {
 }
 input:checked ~ nav {
   background: #1c0b3b;
+  background-image: url(./images/VectorBlob2.svg);
+  background-size: 200% 100vh;
+  background-repeat: no-repeat;
+  background-position: top;
+
   height: 100%;
   transition-delay: 0s;
   > * {

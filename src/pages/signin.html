@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RLH Tracking Homepage</title>
-
+    <link
+      rel="stylesheet"
+      href="https://indestructibletype.com/fonts/Jost.css"
+      type="text/css"
+      charset="utf-8"
+    />
     <link rel="stylesheet" href="../styles.css" />
   </head>
 
@@ -143,7 +148,7 @@
       >
         <form class="space-y-6" _lpchecked="1">
           <h1
-            class="text-2xl md:text-4xl lg:text-6xl lg:mb-10 text-left font-bold text-pink-default"
+            class="text-2xl md:text-4xl lg:text-6xl lg:mb-8 text-left font-bold text-pink-default"
           >
             Sign in to iMicro
           </h1>
@@ -220,7 +225,7 @@
           </div>
 
           <div
-            class="flex flex-col text-center lg:text-left space-y-4 lg:space-y-6"
+            class="flex flex-col text-left lg:text-left space-y-4 lg:space-y-6"
           >
             <a
               type="button"
@@ -229,27 +234,32 @@
             >
               SIGN IN
             </a>
+            <div
+              class="lg:font-semibold lg:max-w-md text-left text-xs lg:text-lg"
+            >
+              By clicking Sign In, you agree to our
+              <span
+                ><a
+                  href="/privacy"
+                  class="duration-200 ease-in hover:text-pink-default text-bright-blue transition"
+                  >Privacy Statement</a
+                >
+                and </span
+              ><span
+                ><a
+                  href="/terms"
+                  class="duration-200 ease-in hover:text-pink-default text-bright-blue transition"
+                  >Terms and Conditions</a
+                >
+              </span>
+            </div>
+            <span class="text-xs"
+              >Already have an account?
+              <a href="" class="text-bright-blue">Login</a></span
+            >
           </div>
         </form>
-        <div
-          class="text-xs lg:text-xl lg:max-w-md text-center lg:text-right lg:font-semibold lg:transform lg:-translate-y-16"
-        >
-          By clicking Sign In, you agree to our
-          <span
-            ><a
-              href="/privacy"
-              class="text-bright-blue hover:text-pink-default transition ease-in duration-200"
-              >Privacy Statement</a
-            >
-            and </span
-          ><span
-            ><a
-              href="/terms"
-              class="text-bright-blue hover:text-pink-default transition ease-in duration-200"
-              >Terms and Conditions</a
-            >
-          </span>
-        </div>
+        <div class="flex flex-col space-y-2 text-center"></div>
       </section>
     </main>
     <script src="../index.js"></script>
