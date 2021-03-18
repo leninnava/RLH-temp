@@ -1,6 +1,5 @@
 import "./styles.css";
 import "./styles.scss";
-console.log("hello world!");
 
 const navButton = document.querySelector("#navButton");
 const navIcons = document.querySelectorAll("#menuIcon");
