@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RLH Tracking Homepage</title>
+
+    <link rel="stylesheet" href="d6ffa851638877c9b00e6a5a85d7e42d">
+  </head>
+
+  <body class="relative bg-gradient-to-tr from-bg-gradient-last to-bg-gradient-first">
+    <label for="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <!-- Illustrations -->
+
+    <div class="absolute h-full w-full z-50 overflow-hidden">
+      <picture class="">
+        <img class="h-full absolute -left-56 -bottom-20 md:bottom-0 transform scale-150 md:scale-100 lg:left-28 z-10" src="af8060f5bb74e2af820b7e96f2b8e816" alt="" srcset="24b21208c1893f5fd07645c61e23e110">
+      </picture>
+      <picture class="">
+        <img class="absolute -right-60 z-0 h-full" src="db99399ae96ded905faf270165f051c1" alt="" srcset="24b21208c1893f5fd07645c61e23e110">
+      </picture>
+      <figure class="">
+        <img class="hidden xl:block absolute right-0 top-14 transform -translate-x-40 z-50" src="53f2985b504f337924b0ed25a185f98d" alt="Phone Illustration" srcset="24b21208c1893f5fd07645c61e23e110">
+      </figure>
+    </div>
+
+    <!-- Illustrations -->
+
+    <main class="relative container w-screen h-screen mx-auto text-white body-font z-50">
+      <!-- new navbar implementation -->
+
+      <nav class="relative mx-auto px-8 h-1/6 z-20">
+        <div class="flex items-center justify-between h-full">
+          <div class="w-full justify-between flex items-center">
+            <a class="md:block flex-shrink-0 z-50" href="">
+              <img class="max-h-44 w-44" src="6bd04a9296f8ad2ba40cf9aef4919015" alt="iMicrodose Logo">
+            </a>
+
+            <div class="hidden md:flex items-center space-x-16">
+              <div class="space-x-10">
+                <a class="text-gray-300 hover:text-pink-default transition ease-in duration-200 text-xs font-medium whitespace-nowrap" href="">
+                  Privacy Terms
+                </a>
+                <a class="text-gray-300 hover:text-pink-default transition ease-in duration-200 text-xs font-medium whitespace-nowrap" href="">
+                  Buy a kit
+                </a>
+              </div>
+              <div class="space-x-3">
+                <a type="button" href="effd8962363f71ffbb7faa3f56bad24e" class="cursor-pointer py-3 w-20 bg-pink-default hover:bg-pink-500 focus:ring-indigo-500 font-semibold focus:ring-offset-indigo-200 text-white transition ease-in duration-200 text-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-sm">
+                  Log In
+                </a>
+
+                <a href="11a043094af9eb0457b1b98aa2515c8d" type="button" class="cursor-pointer py-3 w-20 bg-transparent border border-white hover:border-pink-default font-semibold border-opacity-40 hover:text-pink-default text-white transition ease-in duration-200 text-center text-sm shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-sm">
+                  Sign Up
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="-mr-2 flex md:hidden">
+            <input id="burger" type="checkbox" class="opacity-0">
+            <label for="burger" class="w-auto">
+              <figure class="menuIcon" id="navButton">
+                <img class="icon" src="2877d6d6ad200d06f2377b24c5ce0953" alt="Mobile menu" srcset="24b21208c1893f5fd07645c61e23e110">
+                <img class="icon mb-1 hidden transform -translate-y-4 translate-x-2" src="b29f63f8ba7148bed2a1b99a9e30c0f7" alt="Mobile menu" srcset="24b21208c1893f5fd07645c61e23e110">
+              </figure>
+            </label>
+            <nav class="px-8">
+              <nav class="flex flex-col space-y-5 w-full transform translate-y-20">
+                <button class="w-full md:w-32 h-12 font-semibold bg-pink-default hover:bg-pink-500">
+                  LOG IN
+                </button>
+
+                <button class="w-full md:w-32 h-12 font-semibold border border-white border-opacity-70">
+                  SIGN IN
+                </button>
+              </nav>
+              <nav class="flex flex-col space-y-2 w-full">
+                <a class="w-full md:w-32 h-12 font-semibold hover:text-pink-default" href="">PRIVACYTERMS</a>
+                <a class="w-full md:w-32 h-12 font-semibold hover:text-pink-default" href="">BUY A KIT</a>
+              </nav>
+            </nav>
+          </div>
+        </div>
+      </nav>
+      <header class="relative h-5/6 grid px-8 md:px-16 grid-cols-1 lg:grid-cols-2 items-center">
+        <div>
+          <div class="space-y-8 mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold" style="5fb6be9d55706211fd1d002207719b64">
+              iMicro gives you insights into your microdosing journey!
+            </h1>
+            <h2 class="text-lg font-light opacity-70" style="016d4cd1bd1f1e885a55fb3401a03c59">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </h2>
+          </div>
+          <button class="w-full md:w-32 h-12 font-semibold shadow-lg" style="2c5d5ea2ccb50f65cd9e9a300b7954ab">
+            GET START
+          </button>
+        </div>
+      </header>
+    </main>
+    <script src="4446f5e227c2c938d062e7ce10c1adbe"></script>
+  </body>
+</html>

@@ -1,19 +1,25 @@
 {
-  "name": "tw",
-  "version": "0.0.0",
+  "name": "empty-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "scripts": {
-    "build": "yarn parcel build --no-optimize --no-source-maps --dist-dir ./public index.html",
-    "run": "yarn parcel watch index.html"
-  },
-  "devDependencies": {
-    "@parcel/transformer-sass": "2.0.0-nightly.629"
+    "clean": "rm dist/bundle.js",
+    "start": "parcel src/index.html",
+    "build-prod": "parcel build src/index.html"
   },
   "dependencies": {
-    "@tailwindcss/jit": "^0.1.0",
+    "tailwindcss": "^2.0.4"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "postcss-modules": "^4.0.0",
     "autoprefixer": "^10.2.5",
-    "parcel": "^2.0.0-nightly.627",
-    "postcss": "^8.2.7",
-    "sass": "^1.32.8",
-    "tailwindcss": "^2.0.3"
+    "prettier": "^2.2.1"
   }
 }

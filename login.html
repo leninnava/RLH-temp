@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RLH Tracking Homepage</title>
-    <script type="module" src="./index.js"></script>
+    <script src="./index.ecf117ac.css"></script>
   </head>
 
   <body
@@ -42,18 +42,16 @@
 
     <main
       class="relative container w-screen h-screen mx-auto text-white body-font z-50"
-      style="display: none"
-      id="app"
     >
       <!-- new navbar implementation -->
 
       <nav class="relative mx-auto px-8 h-1/6 z-20">
         <div class="flex items-center justify-between h-full">
           <div class="w-full justify-between flex items-center">
-            <a class="md:block flex-shrink-0 z-50" href="/">
+            <a class="md:block flex-shrink-0 z-50" href="">
               <img
                 class="max-h-44 w-44"
-                src="/images/POST_1_-_LOGO_IMICRODOSE-01 1.png"
+                src="./images/POST_1_-_LOGO_IMICRODOSE-01 1.png"
                 alt="iMicrodose Logo"
               />
             </a>
@@ -74,38 +72,41 @@
                 </a>
               </div>
               <div class="space-x-3">
-                <button
+                <a
                   type="button"
-                  class="py-3 w-20 bg-pink-default hover:bg-pink-500 focus:ring-indigo-500 font-semibold focus:ring-offset-indigo-200 text-white transition ease-in duration-200 text-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-sm"
+                  href="./login.html"
+                  class="cursor-pointer py-3 w-20 bg-pink-default hover:bg-pink-500 focus:ring-indigo-500 font-semibold focus:ring-offset-indigo-200 text-white transition ease-in duration-200 text-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-sm"
                 >
                   Log In
-                </button>
+                </a>
 
-                <button
+                <a
+                  href="./signin.html"
                   type="button"
-                  class="py-3 w-20 bg-transparent border border-white hover:border-pink-default font-semibold border-opacity-40 hover:text-pink-default text-white transition ease-in duration-200 text-center text-sm shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-sm"
+                  class="cursor-pointer py-3 w-20 bg-transparent border border-white hover:border-pink-default font-semibold border-opacity-40 hover:text-pink-default text-white transition ease-in duration-200 text-center text-sm shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-sm"
                 >
                   Sign Up
-                </button>
+                </a>
               </div>
             </div>
           </div>
 
           <div class="-mr-2 flex md:hidden">
             <input id="burger" type="checkbox" class="opacity-0" />
-            <label for="burger" class="navButton w-auto">
-              <figure class="menuIcon">
+            <label for="burger" class="w-auto">
+              <figure class="" id="navButton">
                 <img
-                  class="icon"
-                  src="/images/MenuMobile menu icon - closed .svg"
+                  src="./images/MenuMobile menu icon - closed .svg"
                   alt="Mobile menu"
                   srcset=""
+                  id="menuIcon"
                 />
                 <img
-                  class="icon mb-1 hidden transform -translate-y-4 translate-x-2"
-                  src="/images/CloseMobile menu icon - open.svg"
+                  class="mb-1 hidden transform -translate-y-4 translate-x-2"
+                  src="./images/CloseMobile menu icon - open.svg"
                   alt="Mobile menu"
                   srcset=""
+                  id="menuIcon"
                 />
               </figure>
             </label>
@@ -122,7 +123,7 @@
                 <button
                   class="w-full md:w-32 h-12 font-semibold border border-white border-opacity-70"
                 >
-                  GET START
+                  SIGN IN
                 </button>
               </nav>
               <nav class="flex flex-col space-y-2 w-full">
