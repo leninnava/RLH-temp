@@ -1,9 +1,0 @@
-const navButton = document.querySelector("#navButton");
-const navIcons = document.getElementsByClassName("icon");
-
-const navToggle = () => {
-  navIcons[0].classList.toggle("hidden");
-  navIcons[1].classList.toggle("hidden");
-};
-
-console.log(navButton);
