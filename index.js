@@ -1,12 +1,10 @@
-import "./style.scss";
+const navButton = document.querySelector("#navButton");
+const navIcons = document.querySelectorAll("#menuIcon");
 
-const navIcons = document.getElementsByClassName("icon");
-console.log(navIcons);
 const navToggle = () => {
   navIcons[0].classList.toggle("hidden");
   navIcons[1].classList.toggle("hidden");
+  console.log("fired");
 };
 
-const navButton = document.getElementsByClassName("navButton");
-console.log(navButton);
-navButton[0].addEventListener("click", navToggle);
+navButton.addEventListener("click", navToggle);

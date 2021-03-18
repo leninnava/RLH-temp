@@ -1,7 +1,10 @@
 {
   "name": "tw",
   "version": "0.0.0",
-  "scripts": {},
+  "scripts": {
+    "build": "yarn parcel build --no-optimize --no-source-maps --dist-dir ./public index.html",
+    "run": "yarn parcel watch index.html"
+  },
   "devDependencies": {
     "@parcel/transformer-sass": "2.0.0-nightly.629"
   },

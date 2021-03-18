@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RLH Tracking Homepage</title>
-    <script src="./index.js"></script>
+
     <link rel="stylesheet" href="./index.ecf117ac.css" />
   </head>
 
@@ -101,19 +101,20 @@
 
           <div class="-mr-2 flex md:hidden">
             <input id="burger" type="checkbox" class="opacity-0" />
-            <label for="burger" class="navButton w-auto">
-              <figure class="menuIcon">
+            <label for="burger" class="w-auto">
+              <figure class="" id="navButton">
                 <img
-                  class="icon"
                   src="./images/MenuMobile menu icon - closed .svg"
                   alt="Mobile menu"
                   srcset=""
+                  id="menuIcon"
                 />
                 <img
-                  class="icon mb-1 hidden transform -translate-y-4 translate-x-2"
+                  class="mb-1 hidden transform -translate-y-4 translate-x-2"
                   src="./images/CloseMobile menu icon - open.svg"
                   alt="Mobile menu"
                   srcset=""
+                  id="menuIcon"
                 />
               </figure>
             </label>
@@ -130,7 +131,7 @@
                 <button
                   class="w-full md:w-32 h-12 font-semibold border border-white border-opacity-70"
                 >
-                  GET START
+                  SIGN IN
                 </button>
               </nav>
               <nav class="flex flex-col space-y-2 w-full">
@@ -175,5 +176,6 @@
         </div>
       </header>
     </main>
+    <script src="./index.js"></script>
   </body>
 </html>
