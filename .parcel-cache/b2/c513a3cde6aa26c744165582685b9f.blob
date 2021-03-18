@@ -1,2 +1,0 @@
-!function(){console.log("hello world!");var e=document.querySelector("#navButton"),o=document.querySelectorAll("#menuIcon");e.addEventListener("click",(function(){o[0].classList.toggle("hidden"),o[1].classList.toggle("hidden"),console.log("fired")}))}();
-//# sourceMappingURL=index.HASH_REF_4ac83920e3d1b41a8be7270675b40076.js.map

@@ -1,0 +1,11 @@
+require("./styles.css");
+require("./styles.scss");
+console.log("hello world!");
+var navButton = document.querySelector("#navButton");
+var navIcons = document.querySelectorAll("#menuIcon");
+var navToggle = function navToggle() {
+  navIcons[0].classList.toggle("hidden");
+  navIcons[1].classList.toggle("hidden");
+  console.log("fired");
+};
+navButton.addEventListener("click", navToggle);
