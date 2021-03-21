@@ -29,7 +29,14 @@ module.exports = {
           first: "#101C65",
           last: "#00062E",
         },
+        "action-button-gradient": {
+          first: "#ff3883",
+          last: "#cb2060",
+        }
       },
+      boxShadow: {
+        "blue-glow" : "0px 20px 66px 0px rgba(122, 44, 223, 0.555)",
+      }
     },
   },
   plugins: [],

@@ -14,12 +14,12 @@
     />
   </head>
 
-  <body class="relative font-MSC">
+  <body
+    class="relative h-screen w-screen from-bg-gradient-last to-bg-gradient-first"
+  >
     <!-- Illustrations -->
 
-    <div
-      class="absolute h-screen w-full z-0 overflow-hidden bg-gradient-to-tr from-bg-gradient-last to-bg-gradient-first"
-    >
+    <div class="absolute h-screen w-full z-0 overflow-hidden bg-gradient-to-tr">
       <picture class="">
         <img
           class="h-full absolute -left-56 -bottom-20 md:bottom-0 transform scale-150 md:scale-100 lg:left-28 z-10"
@@ -48,140 +48,106 @@
 
     <!-- Illustrations -->
 
+    <nav class="relative mx-auto px-8 h-1/6 z-50 text-white">
+      <div class="flex items-center justify-between h-full">
+        <a class="md:block flex-shrink-0 z-50" href="./index.html">
+          <img
+            class="w-36 md:w-40 lg:w-44"
+            src="../images/microdose-logo.png"
+            alt="iMicrodose Logo"
+          />
+        </a>
+
+        <div class="hidden md:flex items-center space-x-16">
+          <div class="space-x-10">
+            <a
+              class="text-gray-300 hover:text-pink-default transition ease-in duration-200 text-xs font-medium whitespace-nowrap"
+              href=""
+            >
+              Privacy Terms
+            </a>
+            <a
+              class="text-gray-300 hover:text-pink-default transition ease-in duration-200 text-xs font-medium whitespace-nowrap"
+              href=""
+            >
+              Buy a kit
+            </a>
+          </div>
+          <div class="space-x-3">
+            <a href="./login.html" class="button-primary"> Log In </a>
+
+            <a href="./signin.html" class="button-secondary"> Sign Up </a>
+          </div>
+        </div>
+
+        <!-- // Mobile navbar  -->
+
+        <div class="-mr-2 flex md:hidden">
+          <input id="burger" type="checkbox" class="opacity-0" />
+          <label for="burger" class="w-auto">
+            <figure class="" id="navButton">
+              <img
+                src="../images/mobilemenu-closed.svg"
+                alt="Mobile menu"
+                srcset="../images/mobilemenu-closed.svg"
+                id="menuIcon"
+              />
+              <img
+                class="mb-1 hidden transform -translate-y-4 translate-x-2"
+                src="../images/mobilemenu-open.svg"
+                alt="Mobile menu"
+                srcset="../images/mobilemenu-open.svg"
+                id="menuIcon"
+              />
+            </figure>
+          </label>
+          <nav class="px-8">
+            <nav
+              class="flex flex-col space-y-5 self-end w-full place-items-center"
+            >
+              <a href="./login.html" class="button-primary"> LOG IN </a>
+
+              <a href="./signin.html" class="button-secondary"> SIGN IN </a>
+            </nav>
+            <nav class="flex flex-col space-y-2 w-full">
+              <a
+                class="w-full md:w-32 h-12 font-semibold hover:text-pink-default transition-colors ease-in"
+                href=""
+                >PRIVACY TERMS</a
+              >
+              <a
+                class="w-full md:w-32 h-12 font-semibold hover:text-pink-default transition-colors ease-in"
+                href=""
+                >BUY A KIT</a
+              >
+            </nav>
+          </nav>
+        </div>
+      </div>
+    </nav>
+
     <main
-      class="relative z-30 container w-screen h-screen mx-auto text-white body-font z-50"
+      class="relative h-5/6 lg:h-4/6 z-30 container mx-auto text-white body-font"
     >
       <!-- new navbar implementation -->
 
-      <nav class="relative mx-auto px-8 h-1/6 z-50">
-        <div class="flex items-center justify-between h-full">
-          <div class="w-full justify-between flex items-center">
-            <a class="md:block flex-shrink-0 z-50" href="./index.html">
-              <img
-                class="max-h-44 w-44"
-                src="../images/microdose-logo.png"
-                alt="iMicrodose Logo"
-              />
-            </a>
-
-            <div class="hidden md:flex items-center space-x-16">
-              <div class="space-x-10">
-                <a
-                  class="text-gray-300 hover:text-pink-default transition ease-in duration-200 text-xs font-medium whitespace-nowrap"
-                  href=""
-                >
-                  Privacy Terms
-                </a>
-                <a
-                  class="text-gray-300 hover:text-pink-default transition ease-in duration-200 text-xs font-medium whitespace-nowrap"
-                  href=""
-                >
-                  Buy a kit
-                </a>
-              </div>
-              <div class="space-x-3">
-                <a
-                  type="button"
-                  href="./login.html"
-                  class="cursor-pointer py-3 w-20 bg-pink-default hover:bg-pink-500 focus:ring-indigo-500 font-semibold focus:ring-offset-indigo-200 text-white transition ease-in duration-200 text-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-sm"
-                >
-                  Log In
-                </a>
-
-                <a
-                  href="./signin.html"
-                  type="button"
-                  class="cursor-pointer py-3 w-20 bg-transparent border border-white hover:border-pink-default font-semibold border-opacity-40 hover:text-pink-default text-white transition ease-in duration-200 text-center text-sm shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-sm"
-                >
-                  Sign Up
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="-mr-2 flex md:hidden">
-            <input id="burger" type="checkbox" class="opacity-0" />
-            <label for="burger" class="w-auto">
-              <figure class="" id="navButton">
-                <img
-                  src="../images/mobilemenu-closed.svg"
-                  alt="Mobile menu"
-                  srcset="../images/mobilemenu-closed.svg"
-                  id="menuIcon"
-                />
-                <img
-                  class="mb-1 hidden transform -translate-y-4 translate-x-2"
-                  src="../images/mobilemenu-open.svg"
-                  alt="Mobile menu"
-                  srcset="../images/mobilemenu-open.svg"
-                  id="menuIcon"
-                />
-              </figure>
-            </label>
-            <nav class="px-8">
-              <nav
-                class="flex flex-col space-y-5 w-full transform translate-y-20"
-              >
-                <a
-                  type="button"
-                  href="./login.html"
-                  class="cursor-pointer py-3 w-full lg:w-48 bg-pink-default hover:bg-pink-500 focus:ring-indigo-500 font-semibold focus:ring-offset-indigo-200 text-white transition ease-in duration-200 text-center text-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md"
-                >
-                  LOG IN
-                </a>
-
-                <a
-                  type="button"
-                  href="./signin.html"
-                  class="cursor-pointer py-3 w-full lg:w-48 border border-white border-opacity-70 hover:bg-pink-500 focus:ring-indigo-500 font-semibold focus:ring-offset-indigo-200 text-white transition ease-in duration-200 text-center text-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md"
-                >
-                  SIGN IN
-                </a>
-              </nav>
-              <nav class="flex flex-col space-y-2 w-full">
-                <a
-                  class="w-full md:w-32 h-12 font-semibold hover:text-pink-default"
-                  href=""
-                  >PRIVACYTERMS</a
-                >
-                <a
-                  class="w-full md:w-32 h-12 font-semibold hover:text-pink-default"
-                  href=""
-                  >BUY A KIT</a
-                >
-              </nav>
-            </nav>
-          </div>
-        </div>
-      </nav>
       <header
-        class="relative h-5/6 transform grid px-8 md:px-16 grid-cols-1 lg:grid-cols-2 items-center"
+        class="relative h-full grid px-8 md:px-16 grid-cols-1 lg:grid-cols-2 items-center"
       >
-        <div class="-mt-10">
-          <div class="space-y-8 mb-12">
-            <h1 class="text-4xl md:text-5xl font-bold" style="max-width: 40ch">
-              iMicro gives you insights into your microdosing journey!
-            </h1>
-            <h2 class="text-lg font-light opacity-70" style="max-width: 35ch">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </h2>
-          </div>
-          <button
-            class="w-full md:w-32 h-12 font-semibold shadow-lg"
-            style="
-              background: linear-gradient(180deg, #ff3883 0%, #cb2060 100%);
-
-              box-shadow: 0px 20px 66px 0px rgba(122, 44, 223, 0.555);
-            "
-          >
-            GET START
-          </button>
+        <div class="space-y-8">
+          <h1 class="text-4xl md:text-5xl font-bold" style="max-width: 40ch">
+            iMicro gives you insights into your microdosing journey!
+          </h1>
+          <h2 class="text-lg font-light opacity-70" style="max-width: 35ch">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </h2>
+          <button class="button-cta">GET START</button>
         </div>
       </header>
     </main>
     <footer
-      class="hidden relative z-50 lg:flex container mx-auto h-1/6 -mt-16 flex-col space-y-2 px-8 md:px-24 lg:px-16 xl:px-16 font-thin text-xs text-left"
+      class="flex relative justify-center container mx-auto h-1/6 flex-col space-y-2 px-8 md:px-24 lg:px-16 xl:px-16 pb-4 md:pb-0 font-thin text-xs text-center lg:text-left"
     >
       <div>
         <a href="" class="text-bright-blue">Buy a microdosing kit.</a>

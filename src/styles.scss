@@ -34,6 +34,7 @@ label:hover {
 input ~ nav {
   display: grid;
   place-items: center;
+
   background: transparent;
   position: fixed;
   top: 0;
@@ -45,6 +46,8 @@ input ~ nav {
   transition-delay: 0.5s;
   overflow: hidden;
   > * {
+    visibility: hidden;
+    pointer-events: visible;
     opacity: 0;
     transition: 0.5s;
     transition-delay: 0s;
@@ -61,6 +64,7 @@ input:checked ~ nav {
   height: 100%;
   transition-delay: 0s;
   > * {
+    visibility: visible;
     opacity: 1;
   }
 }
