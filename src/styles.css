@@ -51,6 +51,6 @@
     @apply w-full md:w-32 h-12 font-semibold bg-gradient-to-b from-action-button-gradient-first to-action-button-gradient-last shadow-blue-glow rounded-md lg:rounded-sm;
   }
   .input-username {
-    @apply w-full text-pink-default font-medium lg:w-80 h-10 rounded-md placeholder-opacity-50 placeholder-pink-default px-6 py-6;
+    @apply w-full text-pink-default font-medium lg:w-80 h-10 rounded-md placeholder-opacity-50 placeholder-pink-default px-4 py-6;
   }
 }
