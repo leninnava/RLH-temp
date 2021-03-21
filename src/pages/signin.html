@@ -13,13 +13,15 @@
     <link rel="stylesheet" href="../styles.css" />
   </head>
 
-  <body class="relative" style="background: #1c0b3b">
+  <body
+    class="relative h-screen w-screen from-bg-gradient-last to-bg-gradient-first"
+  >
     <!-- Illustrations -->
 
-    <div class="absolute z-0 h-screen w-full overflow-hidden">
+    <div class="absolute h-screen w-full z-0 overflow-hidden bg-gradient-to-tr">
       <picture class="">
         <img
-          class="h-full hidden absolute -left-56 -bottom-20 md:bottom-0 transform scale-150 md:scale-100 lg:left-28 z-10"
+          class="h-full absolute -left-56 -bottom-20 md:bottom-0 transform scale-150 md:scale-100 lg:left-28 z-10"
           src="../images/VectorBlob1.svg"
           alt=""
           srcset="../images/VectorBlob1.svg"
@@ -27,126 +29,112 @@
       </picture>
       <picture class="">
         <img
-          class="absolute transform scale-150 opacity-60 right-25 md:right-10 -bottom-60 md:top-0 z-0 h-full"
+          class="absolute -right-60 z-0 h-full"
           src="../images/VectorBlob2.svg"
           alt=""
           srcset="../images/VectorBlob2.svg"
         />
       </picture>
+
+      <!-- // if home > render this llustration -->
+
+      <figure class="hidden">
+        <img
+          class="hidden xl:block absolute right-0 top-12 xl:top-12 transform -translate-x-40 z-50"
+          src="../images/phoneillustration.png"
+          alt="Phone Illustration"
+          srcset="../images/phoneillustration.png"
+        />
+      </figure>
     </div>
 
     <!-- Illustrations -->
 
-    <main
-      class="relative container w-screen h-screen mx-auto text-white body-font z-50"
-    >
-      <!-- new navbar implementation -->
+    <nav class="relative mx-auto px-8 lg:px-14 h-1/6 z-50 text-white">
+      <div class="flex items-center justify-between h-full">
+        <a class="md:block flex-shrink-0 z-50" href="./index.html">
+          <img
+            class="w-36 md:w-40 lg:w-44"
+            src="../images/microdose-logo.png"
+            alt="iMicrodose Logo"
+          />
+        </a>
 
-      <nav class="relative mx-auto px-8 h-1/6 z-20">
-        <div class="flex items-center justify-between h-full">
-          <div class="w-full justify-between flex items-center">
-            <a class="md:block flex-shrink-0 z-50" href="./index.html">
-              <img
-                class="max-h-44 w-28"
-                src="../images/microdose-logo.png"
-                alt="iMicrodose Logo"
-              />
+        <div class="hidden md:flex items-center space-x-16">
+          <div class="space-x-10">
+            <a
+              class="text-gray-300 hover:text-pink-default transition ease-in duration-200 text-xs font-medium whitespace-nowrap"
+              href=""
+            >
+              Privacy Terms
             </a>
-
-            <div class="hidden md:flex items-center space-x-16">
-              <div class="space-x-10">
-                <a
-                  class="text-gray-300 hover:text-pink-default transition ease-in duration-200 text-xs font-medium whitespace-nowrap"
-                  href=""
-                >
-                  Privacy Terms
-                </a>
-                <a
-                  class="text-gray-300 hover:text-pink-default transition ease-in duration-200 text-xs font-medium whitespace-nowrap"
-                  href=""
-                >
-                  Buy a kit
-                </a>
-              </div>
-              <div class="space-x-3">
-                <a
-                  type="button"
-                  href="./login.html"
-                  class="cursor-pointer py-3 w-20 bg-pink-default hover:bg-pink-500 focus:ring-indigo-500 font-semibold focus:ring-offset-indigo-200 text-white transition ease-in duration-200 text-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-sm"
-                >
-                  Log In
-                </a>
-
-                <a
-                  href="./signin.html"
-                  type="button"
-                  class="cursor-pointer py-3 w-20 bg-transparent border border-white hover:border-pink-default font-semibold border-opacity-40 hover:text-pink-default text-white transition ease-in duration-200 text-center text-sm shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-sm"
-                >
-                  Sign Up
-                </a>
-              </div>
-            </div>
+            <a
+              class="text-gray-300 hover:text-pink-default transition ease-in duration-200 text-xs font-medium whitespace-nowrap"
+              href=""
+            >
+              Buy a kit
+            </a>
           </div>
+          <div class="space-x-3">
+            <a href="./login.html" class="button-primary"> Log In </a>
 
-          <div class="-mr-2 flex md:hidden">
-            <input id="burger" type="checkbox" class="opacity-0" />
-            <label for="burger" class="w-auto">
-              <figure class="" id="navButton">
-                <img
-                  src="../images/mobilemenu-closed.svg"
-                  alt="Mobile menu"
-                  srcset="../images/mobilemenu-closed.svg"
-                  id="menuIcon"
-                />
-                <img
-                  class="mb-1 hidden transform -translate-y-4 translate-x-2"
-                  src="../images/mobilemenu-open.svg"
-                  alt="Mobile menu"
-                  srcset="../images/mobilemenu-open.svg"
-                  id="menuIcon"
-                />
-              </figure>
-            </label>
-            <nav class="px-8">
-              <nav
-                class="flex flex-col space-y-5 w-full transform translate-y-20"
-              >
-                <a
-                  type="button"
-                  href="./login.html"
-                  class="cursor-pointer py-3 w-full lg:w-48 bg-pink-default hover:bg-pink-500 focus:ring-indigo-500 font-semibold focus:ring-offset-indigo-200 text-white transition ease-in duration-200 text-center text-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md"
-                >
-                  LOG IN
-                </a>
-
-                <a
-                  type="button"
-                  href="./signin.html"
-                  class="cursor-pointer py-3 w-full lg:w-48 border border-white border-opacity-70 hover:bg-pink-500 focus:ring-indigo-500 font-semibold focus:ring-offset-indigo-200 text-white transition ease-in duration-200 text-center text-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md"
-                >
-                  SIGN IN
-                </a>
-              </nav>
-              <nav class="flex flex-col space-y-2 w-full">
-                <a
-                  class="w-full md:w-32 h-12 font-semibold hover:text-pink-default"
-                  href=""
-                  >PRIVACYTERMS</a
-                >
-                <a
-                  class="w-full md:w-32 h-12 font-semibold hover:text-pink-default"
-                  href=""
-                  >BUY A KIT</a
-                >
-              </nav>
-            </nav>
+            <a href="./signin.html" class="button-secondary"> Sign Up </a>
           </div>
         </div>
-      </nav>
+
+        <!-- // Mobile navbar  -->
+
+        <div class="-mr-2 flex md:hidden">
+          <input id="burger" type="checkbox" class="opacity-0" />
+          <label for="burger" class="w-auto">
+            <figure class="" id="navButton">
+              <img
+                src="../images/mobilemenu-closed.svg"
+                alt="Mobile menu"
+                srcset="../images/mobilemenu-closed.svg"
+                id="menuIcon"
+              />
+              <img
+                class="mb-1 hidden transform -translate-y-4 translate-x-2"
+                src="../images/mobilemenu-open.svg"
+                alt="Mobile menu"
+                srcset="../images/mobilemenu-open.svg"
+                id="menuIcon"
+              />
+            </figure>
+          </label>
+          <nav class="px-8">
+            <nav
+              class="flex flex-col space-y-5 self-end w-full place-items-center"
+            >
+              <a href="./login.html" class="button-primary"> LOG IN </a>
+
+              <a href="./signin.html" class="button-secondary"> SIGN IN </a>
+            </nav>
+            <nav class="flex flex-col space-y-2 w-full">
+              <a
+                class="w-full md:w-32 h-12 font-semibold hover:text-pink-default transition-colors ease-in"
+                href=""
+                >PRIVACY TERMS</a
+              >
+              <a
+                class="w-full md:w-32 h-12 font-semibold hover:text-pink-default transition-colors ease-in"
+                href=""
+                >BUY A KIT</a
+              >
+            </nav>
+          </nav>
+        </div>
+      </div>
+    </nav>
+
+    <main
+      class="relative h-4/6 lg:h-4/6 z-30 container mx-auto text-white body-font"
+    >
       <section
-        class="relative text-left h-5/6 grid px-8 md:px-16 grid-cols-1 lg:grid-cols-2 place-items-center items-center"
+        class="relative text-left grid h-full px-8 md:px-16 grid-cols-1 place-items-center items-center"
       >
-        <form class="space-y-6" _lpchecked="1">
+        <form class="space-y-6 max-w-sm" _lpchecked="1">
           <h1
             class="text-2xl -ml-1 md:text-4xl lg:text-6xl lg:mb-8 text-left font-bold text-pink-default"
           >
@@ -159,7 +147,7 @@
             <input
               id="username"
               type="text"
-              class="w-full text-pink-default font-medium lg:w-80 h-10 rounded-md placeholder-opacity-50 placeholder-pink-default px-4 lg:py-6"
+              class="input-username"
               placeholder="Your username"
             />
           </div>
@@ -227,11 +215,7 @@
           <div
             class="flex flex-col text-left lg:text-left space-y-4 lg:space-y-6"
           >
-            <a
-              type="button"
-              href="./login.html"
-              class="cursor-pointer py-3 w-full lg:w-48 bg-pink-default hover:bg-pink-500 focus:ring-indigo-500 font-semibold focus:ring-offset-indigo-200 text-white transition ease-in duration-200 text-center text-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md"
-            >
+            <a type="button" href="./login.html" class="button-primary">
               SIGN IN
             </a>
             <div
@@ -253,31 +237,27 @@
                 >
               </span>
             </div>
-            <span class="text-xs"
+            <span class="text-xs font-thin"
               >Already have an account?
               <a href="" class="text-bright-blue">Login</a></span
             >
           </div>
         </form>
-
-        <div class="flex flex-col space-y-2 text-center">
-          <div
-            class="lg:hidden flex flex-col space-y-2 font-thin text-xs text-center"
-          >
-            <div class="hidden">
-              <a href="" class="text-bright-blue">Buy a microdosing kit.</a>
-              <a href="" class="text-bright-blue">Privacy Terms.</a>
-            </div>
-
-            <span class="opacity-70 w-screen px-4 md:max-w-screen-sm leading-5">
-              Copyright Redlight Holland. We do not condone usage of illegal
-              substances. This app is intended for use where psychedelics are
-              legal.
-            </span>
-          </div>
-        </div>
       </section>
     </main>
+    <footer
+      class="flex md:hidden relative justify-center container mx-auto h-1/6 flex-col space-y-2 px-8 md:px-24 lg:px-16 xl:px-16 pb-4 md:pb-0 font-thin text-xs text-center lg:text-left"
+    >
+      <div class="hidden">
+        <a href="" class="text-bright-blue">Buy a microdosing kit.</a>
+        <a href="" class="text-bright-blue">Privacy Terms.</a>
+      </div>
+
+      <span class="opacity-70 w-auto leading-5 text-white">
+        Copyright Redlight Holland. We do not condone usage of illegal
+        substances. This app is intended for use where psychedelics are legal.
+      </span>
+    </footer>
     <script src="../index.js"></script>
   </body>
 </html>

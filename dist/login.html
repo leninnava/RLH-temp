@@ -29,7 +29,7 @@
 
     <!-- Illustrations -->
 
-    <nav class="relative mx-auto px-8 h-1/6 z-50 text-white">
+    <nav class="relative mx-auto px-8 lg:px-14 h-1/6 z-50 text-white">
       <div class="flex items-center justify-between h-full">
         <a class="md:block flex-shrink-0 z-50" href="/index.html">
           <img class="w-36 md:w-40 lg:w-44" src="/microdose-logo.4a1c1ee6.png" alt="iMicrodose Logo">
@@ -77,22 +77,21 @@
     </nav>
 
     <main class="relative h-4/6 lg:h-4/6 z-30 container mx-auto text-white body-font">
-      <!-- new navbar implementation -->
       <section class="relative text-left grid h-full px-8 md:px-16 grid-cols-1 place-items-center items-center">
-        <form class="space-y-6" _lpchecked="1">
-          <h1 class="text-2xl -ml-1 md:text-4xl lg:text-6xl lg:mb-10 text-left font-bold text-pink-default">
+        <form class="space-y-6 max-w-sm" _lpchecked="1">
+          <h1 class="text-2xl -ml-1 md:text-4xl lg:text-6xl lg:mb-8 text-left font-bold text-pink-default">
             Log in to iMicro
           </h1>
           <div class="space-y-2 lg:space-y-4">
             <label for="username" class="text-md block font-bold">Username</label>
-            <input id="username" type="text" class="w-full text-pink-default font-medium lg:w-80 h-10 rounded-md placeholder-opacity-50 placeholder-pink-default px-4 lg:py-6" placeholder="Your username">
+            <input id="username" type="text" class="input-username" placeholder="Your username">
           </div>
 
           <div class="space-y-2 lg:space-y-4">
             <div class="flex justify-between items-center lg:w-80">
               <label for="password" class="text-md block font-bold">Password</label>
 
-              <a href="" class="text-bright-blue text-xs"></a>
+              <a href="" class="text-bright-blue font-thin text-xs">Forgot password?</a>
             </div>
 
             <div class="grid grid-cols-5 gap-4 w-full lg:w-80 h-10">
@@ -101,9 +100,7 @@
           </div>
 
           <div class="flex flex-col text-center lg:text-left space-y-4 lg:space-y-6">
-            <a type="button" href="/login.html" class="cursor-pointer py-3 w-full lg:w-48 bg-pink-default hover:bg-pink-500 focus:ring-indigo-500 font-semibold focus:ring-offset-indigo-200 text-white transition ease-in duration-200 text-center text-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md">
-              LOG IN
-            </a>
+            <a href="/login.html" class="button-primary"> LOG IN </a>
             <span class="text-xs font-thin">Not a member?
               <a href="" class="text-bright-blue">Sign up now</a></span>
           </div>
