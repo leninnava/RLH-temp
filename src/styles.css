@@ -42,10 +42,10 @@
 
 @layer components {
   .button-primary {
-    @apply cursor-pointer inline-block py-3 w-full max-w-sm  md:w-20 bg-pink-default hover:bg-pink-500 focus:ring-indigo-500 font-semibold focus:ring-offset-indigo-200 text-white transition ease-in duration-200 text-center text-base md:text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md lg:rounded-sm;
+    @apply cursor-pointer inline-block py-3 w-full max-w-sm  md:w-24 bg-pink-default hover:bg-pink-500 focus:ring-indigo-500 font-semibold focus:ring-offset-indigo-200 text-white transition ease-in duration-200 text-center text-base md:text-xs focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md lg:rounded-sm;
   }
   .button-secondary {
-    @apply cursor-pointer inline-block py-3 w-full max-w-sm md:w-20  bg-transparent border border-white hover:border-pink-default font-semibold border-opacity-40 hover:text-pink-default text-white transition ease-in duration-200 text-center text-base md:text-sm shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md lg:rounded-sm;
+    @apply cursor-pointer inline-block py-3 w-full max-w-sm md:w-24 bg-transparent border border-white hover:border-pink-default font-semibold border-opacity-40 hover:text-pink-default text-white transition ease-in duration-200 text-center text-base md:text-xs shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md lg:rounded-sm;
   }
   .button-cta {
     @apply w-full md:w-32 h-12 font-semibold bg-gradient-to-b from-action-button-gradient-first to-action-button-gradient-last shadow-blue-glow rounded-md lg:rounded-sm;
