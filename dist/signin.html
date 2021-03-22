@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="/index.a45764df.css">
   </head>
 
-  <body class="relative h-screen w-screen from-bg-gradient-last to-bg-gradient-first">
+  <body class="relative min-h-screen h-screen landscape:h-full lg:h-screen w-screen landscape:pb-5 from-bg-gradient-last to-bg-gradient-first">
     <!-- Illustrations -->
 
-    <div class="absolute h-screen w-full z-0 overflow-hidden bg-gradient-to-tr">
+    <div class="absolute h-full w-full z-0 overflow-hidden bg-gradient-to-tr">
       <picture class="">
         <img class="h-full absolute -left-56 -bottom-20 md:bottom-0 transform scale-150 md:scale-100 lg:left-28 z-10" src="/VectorBlob1.7f351f63.svg" alt="" srcset="/VectorBlob1.7f351f63.svg">
       </picture>
@@ -28,13 +28,13 @@
 
     <!-- Illustrations -->
 
-    <nav class="relative mx-auto px-8 md:lg:px-16 lg:px-20 h-1/6 z-50 text-white">
+    <nav class="relative mx-auto px-8 md:lg:px-16 lg:px-20 h-1/6 landscape:h-full landscape:py-5 z-50 text-white">
       <div class="flex items-center justify-between h-full">
         <a class="md:block flex-shrink-0 z-50" href="/index.html">
           <img class="w-36 md:w-40 lg:w-44" src="/microdose-logo.4a1c1ee6.png" alt="iMicrodose Logo">
         </a>
 
-        <div class="hidden md:flex items-center space-x-16">
+        <div class="hidden md:flex items-center space-x-14">
           <div class="space-x-10">
             <a class="text-gray-300 hover:text-pink-default transition ease-in duration-200 text-xs font-medium whitespace-nowrap" href="">
               Privacy Terms
@@ -52,12 +52,12 @@
 
         <!-- // Mobile navbar  -->
 
-        <div class="-mr-2 flex md:hidden">
+        <div class="flex md:hidden">
           <input id="burger" type="checkbox" class="opacity-0">
           <label for="burger" class="w-auto">
-            <figure class="" id="navButton">
+            <figure class="mr-2" id="navButton">
               <img src="/mobilemenu-closed.998b86b2.svg" alt="Mobile menu" srcset="/mobilemenu-closed.998b86b2.svg" id="menuIcon">
-              <img class="mb-1 hidden transform -translate-y-4 translate-x-2" src="/mobilemenu-open.6e8b9364.svg" alt="Mobile menu" srcset="/mobilemenu-open.6e8b9364.svg" id="menuIcon">
+              <img class="hidden" src="/mobilemenu-open.6e8b9364.svg" alt="Mobile menu" srcset="/mobilemenu-open.6e8b9364.svg" id="menuIcon">
             </figure>
           </label>
           <nav class="px-8">
@@ -75,44 +75,42 @@
       </div>
     </nav>
 
-    <main class="relative h-4/6 lg:h-4/6 z-30 container mx-auto text-white body-font">
-      <section class="relative text-left grid h-full px-8 md:px-16 grid-cols-1 place-items-center items-center">
-        <form class="space-y-6 max-w-sm" _lpchecked="1">
-          <h1 class="text-2xl -ml-1 md:text-4xl lg:text-6xl lg:mb-8 text-left font-bold text-pink-default">
-            Sign in to iMicro
-          </h1>
-          <div class="space-y-2 lg:space-y-4">
-            <label for="username" class="text-md block font-bold">Username</label>
-            <input id="username" type="text" class="input-username" placeholder="Your username">
+    <main class="relative grid place-content-center px-8 md:px-16 h-4/6 lg:h-5/6 z-30 container mx-auto text-white body-font">
+      <form class="space-y-6 max-w-sm h-full" _lpchecked="1">
+        <h1 class="text-2xl -ml-1 md:text-4xl lg:text-6xl lg:mb-8 text-left font-bold text-pink-default">
+          Sign in to iMicro
+        </h1>
+        <div class="space-y-2 lg:space-y-4">
+          <label for="username" class="text-md block font-bold">Username</label>
+          <input id="username" type="text" class="input-username" placeholder="Your username">
+        </div>
+
+        <div class="space-y-2 lg:space-y-4">
+          <div class="flex justify-between items-center lg:w-80">
+            <label for="password" class="text-md block font-bold">Password</label>
+
+            <a href="" class="text-bright-blue hover:text-pink-default transti text-xs"></a>
           </div>
 
-          <div class="space-y-2 lg:space-y-4">
-            <div class="flex justify-between items-center lg:w-80">
-              <label for="password" class="text-md block font-bold">Password</label>
-
-              <a href="" class="text-bright-blue hover:text-pink-default transti text-xs"></a>
-            </div>
-
-            <div class="grid grid-cols-5 gap-4 w-full lg:w-80 h-10">
-              <input type="password" inputmode="numeric" pattern="[0-9]*" id="password1" maxlength="1" min="0" max="9" class="rounded-md"><input type="password" inputmode="numeric" pattern="[0-9]*" id="password2" min="0" max="9" maxlength="1" class="rounded-md"><input type="password" inputmode="numeric" pattern="[0-9]*" id="password3" min="0" max="9" maxlength="1" class="rounded-md"><input type="password" inputmode="numeric" pattern="[0-9]*" id="password4" maxlength="1" min="0" max="9" class="rounded-md"><a tabindex="-1" href="javascript:;" class="flex items-center justify-center outline-none"><img class="h-full p-2 rounded-md border-opacity-60 fill-current border border-white" src="/visibility.320fe8b0.fa03c1d0.svg"></a>
-            </div>
+          <div class="grid grid-cols-5 gap-4 w-full lg:w-80 h-10">
+            <input type="password" inputmode="numeric" pattern="[0-9]*" id="password1" maxlength="1" min="0" max="9" class="rounded-md"><input type="password" inputmode="numeric" pattern="[0-9]*" id="password2" min="0" max="9" maxlength="1" class="rounded-md"><input type="password" inputmode="numeric" pattern="[0-9]*" id="password3" min="0" max="9" maxlength="1" class="rounded-md"><input type="password" inputmode="numeric" pattern="[0-9]*" id="password4" maxlength="1" min="0" max="9" class="rounded-md"><a tabindex="-1" href="javascript:;" class="flex items-center justify-center outline-none"><img class="h-full p-2 rounded-md border-opacity-60 fill-current border border-white" src="/visibility.320fe8b0.fa03c1d0.svg"></a>
           </div>
+        </div>
 
-          <div class="flex flex-col text-left lg:text-left space-y-4 lg:space-y-6">
-            <a type="button" href="/login.html" class="button-primary">
-              SIGN IN
-            </a>
-            <div class="lg:font-semibold lg:max-w-md text-left text-xs lg:text-lg">
-              By clicking Sign In, you agree to our
-              <span><a href="/privacy" class="duration-200 ease-in hover:text-pink-default text-bright-blue transition">Privacy Statement</a>
-                and </span><span><a href="/terms" class="duration-200 ease-in hover:text-pink-default text-bright-blue transition">Terms and Conditions</a>
-              </span>
-            </div>
-            <span class="text-xs font-thin">Already have an account?
-              <a href="" class="text-bright-blue">Login</a></span>
+        <div class="flex flex-col text-left lg:text-left space-y-4 lg:space-y-6">
+          <a type="button" href="/login.html" class="button-primary">
+            SIGN IN
+          </a>
+          <div class="lg:font-semibold lg:max-w-md text-left text-xs lg:text-lg">
+            By clicking Sign In, you agree to our
+            <span><a href="/privacy" class="duration-200 ease-in hover:text-pink-default text-bright-blue transition">Privacy Statement</a>
+              and </span><span><a href="/terms" class="duration-200 ease-in hover:text-pink-default text-bright-blue transition">Terms and Conditions</a>
+            </span>
           </div>
-        </form>
-      </section>
+          <span class="text-xs font-thin">Already have an account?
+            <a href="" class="text-bright-blue">Login</a></span>
+        </div>
+      </form>
     </main>
     <footer class="flex md:hidden relative justify-center container mx-auto h-1/6 flex-col space-y-2 px-8 md:px-24 lg:px-16 xl:px-16 pb-4 md:pb-0 font-thin text-xs text-center lg:text-left">
       <div class="hidden">

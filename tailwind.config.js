@@ -1,5 +1,6 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
+const { minWidth } = require("tailwindcss/defaultTheme");
 module.exports = {
   purge: {
     enabled: false,
@@ -36,8 +37,14 @@ module.exports = {
       },
       boxShadow: {
         "blue-glow" : "0px 20px 66px 0px rgba(122, 44, 223, 0.555)",
-      }
+      },
+       screens: {
+        'landscape': {'raw': '(max-width: 820px) and (max-height: 420px)'},
+        // => @media (orientation: portrait) { ... }
+      },
     },
+    /// TailwindCSS doesn't have portrait-related breakpoints yet. 
+   
   },
   plugins: [],
 };

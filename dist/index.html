@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8">
   </head>
 
-  <body class="relative h-screen w-screen from-bg-gradient-last to-bg-gradient-first">
+  <body class="relative min-h-screen h-screen landscape:h-full lg:h-screen w-screen landscape:pb-5 from-bg-gradient-last to-bg-gradient-first">
     <!-- Illustrations -->
 
-    <div class="absolute h-screen w-full z-0 overflow-hidden bg-gradient-to-tr">
+    <div class="absolute h-full w-full z-0 overflow-hidden bg-gradient-to-tr">
       <picture class="">
         <img class="h-full absolute -left-56 -bottom-20 md:bottom-0 transform scale-150 md:scale-100 lg:left-28 z-10" src="/VectorBlob1.7f351f63.svg" alt="" srcset="/VectorBlob1.7f351f63.svg">
       </picture>
@@ -26,7 +26,7 @@
 
     <!-- Illustrations -->
 
-    <nav class="relative mx-auto px-8 md:lg:px-16 lg:px-20 h-1/6 z-50 text-white">
+    <nav class="relative mx-auto px-8 md:lg:px-16 lg:px-20 h-1/6 landscape:h-full landscape:py-5 z-50 text-white">
       <div class="flex items-center justify-between h-full">
         <a class="md:block flex-shrink-0 z-50" href="/index.html">
           <img class="w-36 md:w-40 lg:w-44" src="/microdose-logo.4a1c1ee6.png" alt="iMicrodose Logo">
@@ -50,12 +50,12 @@
 
         <!-- // Mobile navbar  -->
 
-        <div class="-mr-2 flex md:hidden">
+        <div class="flex md:hidden">
           <input id="burger" type="checkbox" class="opacity-0">
           <label for="burger" class="w-auto">
-            <figure class="" id="navButton">
+            <figure class="mr-2" id="navButton">
               <img src="/mobilemenu-closed.998b86b2.svg" alt="Mobile menu" srcset="/mobilemenu-closed.998b86b2.svg" id="menuIcon">
-              <img class="mb-1 hidden transform -translate-y-4 translate-x-2" src="/mobilemenu-open.6e8b9364.svg" alt="Mobile menu" srcset="/mobilemenu-open.6e8b9364.svg" id="menuIcon">
+              <img class="hidden" src="/mobilemenu-open.6e8b9364.svg" alt="Mobile menu" srcset="/mobilemenu-open.6e8b9364.svg" id="menuIcon">
             </figure>
           </label>
           <nav class="px-8">
@@ -73,10 +73,10 @@
       </div>
     </nav>
 
-    <main class="relative h-5/6 lg:h-4/6 z-30 container mx-auto text-white body-font">
+    <main class="relative grid place-content-center px-8 md:px-16 h-5/6 lg:h-4/6 z-30 container mx-auto text-white body-font">
       <!-- new navbar implementation -->
 
-      <header class="relative h-full grid px-8 md:px-16 grid-cols-1 lg:grid-cols-2 items-center">
+      <header class="relative grid h-full grid-cols-1 lg:grid-cols-2 items-center">
         <div class="space-y-8">
           <h1 class="text-4xl md:text-5xl font-bold" style="max-width: 40ch
 ">
