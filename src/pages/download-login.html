@@ -14,12 +14,12 @@
   </head>
 
   <body
-    class="relative min-h-screen h-screen landscape:h-full lg:h-screen w-screen landscape:pb-5 bg-gradient-to-tr from-bg-gradient-last to-bg-gradient-first"
+    class="relative min-h-screen grid grid-rows-6 landscape:h-full lg:h-screen w-full landscape:pb-5 bg-darkblue"
   >
     <!-- Illustrations -->
 
     <div class="absolute h-full w-full z-0 overflow-hidden">
-      <picture class="">
+      <picture class="hidden">
         <img
           class="h-full absolute -left-56 -bottom-20 md:bottom-0 transform scale-150 md:scale-100 lg:left-28 z-10"
           src="../images/VectorBlob1.svg"
@@ -29,7 +29,7 @@
       </picture>
       <picture class="">
         <img
-          class="absolute -right-60 z-0 h-full"
+          class="absolute left-0 bottom-0 transform scale-150 z-0 h-full"
           src="../images/VectorBlob2.svg"
           alt=""
           srcset="../images/VectorBlob2.svg"
@@ -51,7 +51,7 @@
     <!-- Illustrations -->
 
     <nav
-      class="relative mx-auto px-8 md:px-16 lg:px-10 h-1/6 landscape:h-full landscape:py-5 z-50 max-w-screen-xl text-white"
+      class="relative row-span-1 px-8 md:px-16 lg:px-10 h-28 landscape:py-5 z-50 max-w-screen-xl mx-auto w-full text-white"
     >
       <div class="flex items-center justify-between h-full">
         <a class="md:block flex-shrink-0 z-50" href="./index.html">
@@ -131,22 +131,33 @@
     </nav>
 
     <main
-      class="relative grid place-content-center px-8 md:px-16 h-5/6 lg:h-5/6 z-30 container mx-auto max-w-screen-xl text-white body-font"
+      class="relative row-start-2 row-end-7 px-8 md:px-16 lg:h-5/6 z-30 container mx-auto text-white body-font"
     >
       <form
-        class="grid max-w-sm h-full divide-y divide-gray-700"
-        _lpchecked="1"
+        class="grid h-auto mx-auto items-center grid-rows-6 max-w-sm"
+        style="max-height: 30rem; height: 30rem"
       >
-        <span class="space-y-2">
-          <h1 class="heading-secondary">Registration Complete</h1>
-          <p class="text-sm font-medium">
+        <span class="space-y-3 md:space-y-2 row-start-1 row-end-3">
+          <h1 class="ml-0 md:text-3xl mb-0 heading-secondary">
+            Registration Complete
+          </h1>
+          <p class="text-base md:text-lg font-medium">
             This is a privacy-first app. We cannot reset your password
           </p>
         </span>
-        <span>
-          <p>Download your login info to prevent losing your credentials.</p>
-          <a class="button-secondary" href="">Download login</a>
-          <a class="button-primary" href="">Next</a>
+        <hr class="border-gray-400 opacity-70" />
+        <span class="row-start-4 row-end-7 space-y-3 flex flex-col">
+          <p class="font-thin text-sm md:text-base text-center">
+            Download your login info to prevent losing your credentials.
+          </p>
+          <a class="button-secondary w-full md:uppercase text-base" href=""
+            >Download login</a
+          >
+          <a
+            class="button-primary w-full md:uppercase text-base"
+            href="./step01-privacy.html"
+            >Next</a
+          >
         </span>
       </form>
     </main>

@@ -51,9 +51,9 @@
     @apply w-full md:w-32 h-12 font-semibold bg-gradient-to-b from-action-button-gradient-first to-action-button-gradient-last shadow-blue-glow rounded-md lg:rounded-sm;
   }
   .input-username {
-    @apply w-full text-pink-default font-medium lg:w-80 h-10 rounded-md placeholder-opacity-50 placeholder-pink-default px-4 py-6;
+    @apply w-full text-pink-default font-medium h-10 rounded-md placeholder-opacity-50 placeholder-pink-default px-4 py-6;
   }
   .heading-secondary {
-    @apply text-2xl -ml-1 md:text-4xl lg:text-5xl lg:mb-8 text-left font-bold text-pink-default;
+    @apply text-2xl lg:-ml-1 md:text-4xl lg:text-4xl text-left md:text-center font-bold text-pink-default;
   }
 }

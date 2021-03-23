@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RLH Tracking Homepage</title>
+    <link
+      rel="stylesheet"
+      href="https://indestructibletype.com/fonts/Jost.css"
+      type="text/css"
+      charset="utf-8"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body
+    class="relative min-h-screen grid grid-rows-6 landscape:h-full lg:h-screen w-full landscape:pb-5 bg-gradient-to-tr from-bg-gradient-last to-bg-gradient-first"
+  >
+    <!-- Illustrations -->
+
+    <div class="absolute h-full w-full z-0 overflow-hidden">
+      <picture class="">
+        <img
+          class="h-full absolute -left-56 -bottom-20 md:bottom-0 transform scale-150 md:scale-100 lg:left-28 z-10"
+          src="../images/VectorBlob1.svg"
+          alt=""
+          srcset="../images/VectorBlob1.svg"
+        />
+      </picture>
+      <picture class="">
+        <img
+          class="absolute -right-60 z-0 h-full"
+          src="../images/VectorBlob2.svg"
+          alt=""
+          srcset="../images/VectorBlob2.svg"
+        />
+      </picture>
+
+      <!-- // if home > render this llustration -->
+
+      <figure class="hidden">
+        <img
+          class="hidden xl:block absolute right-0 top-12 xl:top-12 transform -translate-x-40 z-50"
+          src="../images/phoneillustration.png"
+          alt="Phone Illustration"
+          srcset="../images/phoneillustration.png"
+        />
+      </figure>
+    </div>
+
+    <!-- Illustrations -->
+
+    <nav
+      class="relative row-span-1 px-8 md:px-16 lg:px-10 h-28 landscape:py-5 z-50 max-w-screen-xl mx-auto w-full text-white"
+    >
+      <div class="flex items-center justify-between h-full">
+        <a class="md:block flex-shrink-0 z-50" href="./index.html">
+          <img
+            class="w-36 md:w-40 lg:w-44"
+            src="../images/microdose-logo.png"
+            alt="iMicrodose Logo"
+          />
+        </a>
+
+        <div class="hidden md:flex items-center space-x-14">
+          <div class="space-x-10">
+            <a
+              class="text-gray-300 hover:text-pink-default transition ease-in duration-200 text-xs font-medium whitespace-nowrap"
+              href=""
+            >
+              Privacy Terms
+            </a>
+            <a
+              class="text-gray-300 hover:text-pink-default transition ease-in duration-200 text-xs font-medium whitespace-nowrap"
+              href=""
+            >
+              Buy a kit
+            </a>
+          </div>
+          <div class="space-x-3">
+            <a href="./login.html" class="button-primary"> Log In </a>
+
+            <a href="./signin.html" class="button-secondary"> Sign Up </a>
+          </div>
+        </div>
+
+        <!-- // Mobile navbar  -->
+
+        <nav class="flex md:hidden">
+          <input id="burger" type="checkbox" class="opacity-0" />
+          <label for="burger" class="w-auto">
+            <figure class="mr-2" id="navButton">
+              <img
+                src="../images/mobilemenu-closed.svg"
+                alt="Mobile menu"
+                srcset="../images/mobilemenu-closed.svg"
+                id="menuIcon"
+              />
+              <img
+                class="hidden"
+                src="../images/mobilemenu-open.svg"
+                alt="Mobile menu"
+                srcset="../images/mobilemenu-open.svg"
+                id="menuIcon"
+              />
+            </figure>
+          </label>
+          <nav class="px-8">
+            <nav
+              class="flex flex-col space-y-5 self-end w-full place-items-center"
+            >
+              <a href="./login.html" class="button-primary"> Log in </a>
+
+              <a href="./signin.html" class="button-secondary"> Sign in </a>
+            </nav>
+            <nav class="flex flex-col space-y-2 w-full">
+              <a
+                class="w-full md:w-32 h-12 font-semibold hover:text-pink-default transition-colors ease-in"
+                href=""
+                >Privacy terms</a
+              >
+              <a
+                class="w-full md:w-32 h-12 font-semibold hover:text-pink-default transition-colors ease-in"
+                href=""
+                >Buy a kit</a
+              >
+            </nav>
+          </nav>
+        </nav>
+      </div>
+    </nav>
+  
+    <main
+      class="relative row-start-2 row-end-7 px-8 md:px-16 lg:h-5/6 z-30 container mx-auto text-white body-font"
+    >
+     <form
+        class="grid h-auto mx-auto items-center grid-rows-6 pt-4 max-w-sm"
+       style="max-height: 30rem; height: 30rem;"
+      >
+      <span class="row-start-1 row-end-4 flex flex-col space-y-6">
+          <span>
+            <h2 class="text-sm">1/9 Privacy</h2>
+        <div style="background: #443b60;" class="w-full h-1 rounded-full mt-3">
+            <div class="w-1/9 h-full text-center text-xs text-white bg-pink-default rounded-full">
+            </div>
+        </div>
+          </span>
+           <span class="space-y-3 md:space-y-2">
+          <h1 class="ml-0 md:text-3xl mb-0 heading-secondary">Privacy</h1>  
+          <span class="flex flex-row justify-between w-full">
+            <h3 class="font-medium w-4/9">Allow Anonymized sharing</h3>
+               <span>
+                     <input type="checkbox" class="switch" name="switch" >
+                <label for="switch"></label>
+               </span>
+         
+         
+          </span>
+         
+               
+        </span>
+          
+        <p class="text-sm font-light opacity-70 w-6/9 md:w-full">
+            Microdosing research is at its infancy. Turn this on is you want to contribute your anonymized data to help advance research.
+        </p>
+         
+      </span>
+   
+      <span class="flex flex-row justify-between row-start-6 md:row-start-5 row-end-7 md:row-end-6">
+           <a href="" class="text-left hover:text-pink-default hover:bg-transparent flex items-center relative button-primary bg-transparent w-4/9 text-base">
+            <figure class="inline-block pr-4">
+                <img class="h-4" src="../images/arrow-back.svg" alt="back symbol">
+            </figure>
+            Back</a>
+            <a href="./step02-0-protocol.html" class="button-primary w-6/9 text-base">Next</a>
+               
+      </span>
+     
+      </form>
+    </main>
+    <script src="../index.js"></script>
+  </body>
+</html>

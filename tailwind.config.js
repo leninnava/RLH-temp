@@ -25,6 +25,7 @@ module.exports = {
           default: "#FF3883",
         },
         "bright-blue": "#7D68FF",
+        "darkblue": "#1c0b3b",
 
         "bg-gradient": {
           first: "#101C65",
@@ -42,6 +43,17 @@ module.exports = {
         'landscape': {'raw': '(max-width: 820px) and (max-height: 420px)'},
         // => @media (orientation: portrait) { ... }
       },
+      width: {
+        "1/9": "11.1111111111111111%",
+         "2/9": "22.2222222222222222%",
+          "3/9": "33.3333333333333333%",
+           "4/9": "44.4444444444444444%",
+            "5/9": "55.5555555555555555%",
+             "6/9": "66.6666666666666666%",
+              "7/9": "77.7777777777777777%",
+               "8/9": "88.8888888888888888%",
+                "9/9": "99.9999999999999999%",
+      }
     },
     /// TailwindCSS doesn't have portrait-related breakpoints yet. 
    

@@ -15,12 +15,12 @@
   </head>
 
   <body
-    class="relative min-h-screen h-screen landscape:h-full lg:h-screen w-screen from-bg-gradient-last to-bg-gradient-first"
+    class="relative min-h-screen grid grid-rows-6 landscape:h-full lg:h-screen w-full landscape:pb-5 bg-darkblue"
   >
     <!-- Illustrations -->
 
-    <div class="absolute h-full w-full z-0 overflow-hidden bg-gradient-to-tr">
-      <picture class="">
+    <div class="absolute h-full w-full z-0 overflow-hidden">
+      <picture class="hidden">
         <img
           class="h-full absolute -left-56 -bottom-20 md:bottom-0 transform scale-150 md:scale-100 lg:left-28 z-10"
           src="../images/VectorBlob1.svg"
@@ -30,7 +30,7 @@
       </picture>
       <picture class="">
         <img
-          class="absolute -right-60 z-0 h-full"
+          class="absolute left-0 bottom-0 transform scale-150 z-0 h-full"
           src="../images/VectorBlob2.svg"
           alt=""
           srcset="../images/VectorBlob2.svg"
@@ -50,9 +50,8 @@
     </div>
 
     <!-- Illustrations -->
-
     <nav
-      class="relative mx-auto px-8 md:px-16 lg:px-10 h-1/6 landscape:h-full landscape:py-5 z-50 max-w-screen-xl text-white"
+      class="relative row-span-1 px-8 md:px-16 lg:px-10 h-28 landscape:py-5 z-50 max-w-screen-xl mx-auto w-full text-white"
     >
       <div class="flex items-center justify-between h-full">
         <a class="md:block flex-shrink-0 z-50" href="./index.html">
@@ -87,7 +86,7 @@
 
         <!-- // Mobile navbar  -->
 
-        <div class="flex md:hidden">
+        <nav class="flex md:hidden">
           <input id="burger" type="checkbox" class="opacity-0" />
           <label for="burger" class="w-auto">
             <figure class="mr-2" id="navButton">
@@ -127,16 +126,19 @@
               >
             </nav>
           </nav>
-        </div>
+        </nav>
       </div>
     </nav>
 
     <main
-      class="relative grid place-content-center px-8 md:px-16 h-4/6 lg:h-4/6 z-30 container mx-auto max-w-screen-xl text-white body-font"
+      class="relative row-start-2 row-end-6 px-8 md:px-16 lg:h-5/6 z-30 container mx-auto text-white body-font"
     >
-      <form class="space-y-6 max-w-sm h-full" _lpchecked="1">
+      <form
+        class="grid mx-auto items-baseline max-w-sm"
+        style="max-height: 24rem; height: 24rem"
+      >
         <h1 class="heading-secondary">Log in to iMicro</h1>
-        <div class="space-y-2 lg:space-y-4">
+        <div class="space-y-2">
           <label for="username" class="text-md block font-bold">Username</label>
           <input
             id="username"
@@ -146,8 +148,8 @@
           />
         </div>
 
-        <div class="space-y-2 lg:space-y-4">
-          <div class="flex justify-between items-center lg:w-80">
+        <div class="space-y-2">
+          <div class="flex justify-between items-center">
             <label for="password" class="text-md block font-bold"
               >Password</label
             >
@@ -205,10 +207,12 @@
           </div>
         </div>
 
-        <div
-          class="flex flex-col text-center lg:text-left space-y-4 lg:space-y-6"
-        >
-          <a href="./login.html" class="button-primary"> LOG IN </a>
+        <div class="flex flex-col text-center space-y-6">
+          <a
+            href="./login.html"
+            class="button-primary w-full md:uppercase text-base"
+            >Log In</a
+          >
           <span class="text-xs font-thin"
             >Not a member?
             <a href="" class="text-bright-blue">Sign up now</a></span
@@ -222,7 +226,7 @@
     percentage based. The height class on the main and footer should change accordingly.) -->
 
     <footer
-      class="flex relative justify-center container mx-auto h-1/6 flex-col space-y-2 px-8 md:px-24 lg:px-16 xl:px-16 pb-4 md:pb-0 font-thin text-xs text-center max-w-screen-xl lg:text-left"
+      class="flex row-start-6 row-end-7 justify-center container mx-auto flex-col space-y-2 px-8 md:px-24 lg:px-16 xl:px-16 pb-4 md:pb-0 font-thin text-xs text-center max-w-screen-md"
     >
       <div>
         <a href="" class="text-bright-blue">Buy a microdosing kit.</a>
